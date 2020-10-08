@@ -1,0 +1,15 @@
+Para compilar, é necessário incluir todos os arquivos cpp após o comando de compilação do C++ (g++), também é necessário dar o comando -o no final para que ele compile um executável, após é necessário declarar o nome do arquivo:
+
+g++ main.cpp Ula.cpp Decoder.cpp RegData.cpp Memdata.cpp -o teste
+
+Caso queira testar se todos os comandos de um .cpp que não tenha int main(){} estão funcionando, é possível compilá-lo como:
+
+g++ nomeArquivo.cpp -c
+
+Isso vai gerar o .o do arquivo, se tudo tiver certo, o .o é gerado, mas não é possível executá-lo já que não há main.
+
+
+Pra executar o programa precisa ser obrigatoriamente por terminal e precisa da adição de dois parâmetros a mais em ordem, 
+o nome do arquivo a ser lido (o que vai estar em codificação hexadecimal) e o modo de operação, pausado ou direto:
+
+./teste shift direto

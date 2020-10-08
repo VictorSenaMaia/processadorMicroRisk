@@ -1,0 +1,44 @@
+http://www.cplusplus.com/reference/bitset/bitset/operators/
+
+
+
+>> Fazer as paradas em bitwise
+
+
+Todas declaradas como unsigned char? uint16_t?
+
+	R: Sim.
+
+Formato 2, a primeira instrução realmente tem 2 chamadas?
+
+	R: Não existe a instrução LC. 
+
+Constante 0 errada na última do formato 3?
+
+	R: Extensão terminou com 0, tudo 0. Extensão terminou com 1, tudo 1.
+
+O que é XX nos bits 9 e 8 do formato 3? Vale também para os bits 10 a 3 do formato 6.
+
+	R: XX ou X são campos não analisados.
+
+
+Como eu crio a memória de forma correta? Como incluir código, instruções e saber que endereços isso vai me levar?
+
+	R: Criar um vetor de uint16_t com 32768 posições, indo de 0 até 32767. (2^16 dividido por 2 palavras)
+	PC move-se de PC+1 em PC+1
+	Joga todo o arquivo para a memória, começa a memória de dados uma posição após o fim.
+	
+	
+
+Formato 7 - Memórias está errado/incompleto?
+
+	R: Errado, incompleto.
+
+Halt é um loop infinito? Tipo, overflow, travar o PC?
+
+	R: Halt é um endereço de memória que sai da área de memória e leva uma instrução especial. Mas pode implementar abortando o programa de algum modo.
+
+Vai cobrar sintaxe de chamada?
+
+	R: Não vai cobrar, mas vai querer que faça duas coisas: Uma função para dar "play direto" e printar o resultado final dos registradores e outro que faça "instrução por instrução" e imprima o resultado de todos registradores.
+	Precisa ter -> arquivo de entrada e tipo de teste (play direto ou instrução por instrução)
